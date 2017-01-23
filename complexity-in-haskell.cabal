@@ -1,0 +1,19 @@
+name:                complexity-in-haskell
+version:             0.1.0.0
+synopsis:            A sample project that evidentiate how complexity cause by state and control can be managed by using a Polyglot architecture
+description:         Please see README.md
+license:             MIT
+author:              Virgilio Lino
+maintainer:          virgilio@posteo.de
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.10
+
+executable my-project
+  hs-source-dirs:      src
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  build-depends:       base,
+                       scotty,
+                       aeson,
+                       text
