@@ -29,10 +29,6 @@ calc_total (item:items) = (pricePerUnit item * fromIntegral(quantity item)) + ca
 main = do
   putStrLn "Starting Server..."
   scotty 3000 $ do
-    get "/hello/:name" $ do
-      name <- param "name"
-      text ("hello " <> name <> "!")
-
     post "/cart" $ do
       shoppingCart <- jsonData
       let items = cart shoppingCart
